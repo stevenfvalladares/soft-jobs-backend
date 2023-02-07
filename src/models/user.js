@@ -1,4 +1,4 @@
-const pool = require("../config/setting_postgresql").getInstance();
+const pool = require("../helpers/connect_db").getInstance();
 
 const createUser = async (payload) => {
   SQLquery = {
